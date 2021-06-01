@@ -8,6 +8,8 @@ const StyledAppContainer = styled.div`
   min-width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 function App() {

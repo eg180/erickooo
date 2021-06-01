@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // import 'antd/dist/antd.css';
 // import { Carousel } from 'antd';
 import About from './About';
-import AboutSidebar from './AboutSidebar';
+import Home from './Home';
 import { 
     Route, 
     Path, 
@@ -49,7 +49,8 @@ export default function LandingPage() {
         <StyledHomeContainer>
             <Switch>
                 <Route path="/about" component={About} />
-
+                <Route exact path="/" component={Home} />
+                
 
 
             

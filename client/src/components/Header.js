@@ -4,11 +4,15 @@ import styled from 'styled-components';
 
 
 const StyledHeader = styled.header`
+    a {
+        text-decoration: none;
+    }
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     font-family: 'Abril Fatface', cursive;
+    font-family: 'Roboto Mono', monospace;
     /* font-family: 'Bebas Neue', cursive; */
     /* font-family: 'Bungee Outline', cursive; */
     /* font-family: 'Bungee Shade', cursive; */
@@ -76,12 +80,11 @@ const StyledHeader = styled.header`
 export default function Header() {
     return (
         <StyledHeader>
-            <div className="erick-box-1">Erick Gonzalez</div>
+            <Link to="/"><div className="erick-box-1">Erick Gonzalez</div></Link>
             <nav>
                 <Link to="/about">about</Link>
-                <Link to="/blog">blog</Link>
                 <Link to="/resume">resume</Link>
-                <Link to="/about">portfolio</Link>
+                <Link to="/about">projects</Link>
 
             </nav>
 
