@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const StyledHomeDiv = styled.div`
+const StyledAbout = styled.div`
     display: flex;
     flex-direction: row;
     background-color: #fdefe6;
     border-radius: 20px;
     justify-content: space-between;
-    margin-left: 9rem;
+    /* margin-left: 5rem; */
     min-height: inherit;
-    min-width: inherit;
+    min-width: 90vw;
     font-size: 3rem;
     font-family: 'Roboto Mono', monospace;
     padding: 1rem;
@@ -17,18 +17,27 @@ const StyledHomeDiv = styled.div`
                 0 2px 2px rgba(0,0,0,0.11), 
                 0 4px 4px rgba(0,0,0,0.11), 
                 0 6px 8px rgba(0,0,0,0.11),
-                0 8px 16px rgba(0,0,0,0.11);    
-
+                0 8px 16px rgba(0,0,0,0.11);
 `
 
-
-function Home() {
+function Projects() {
     return (
-        <StyledHomeDiv>
-            <img src="images/ErickGithubBanner.jpg" alt="retro desktop" />
-        </StyledHomeDiv>
+        <>
+        <StyledAbout>
+            <div><h1>Resume</h1>
+    
+            
+            
+            
+            
+            
+            </div>
+
+            
+            
+        </StyledAbout>
+        </>
     )
 }
 
-export default Home
-
+export default Projects

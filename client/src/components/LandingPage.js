@@ -4,6 +4,9 @@ import styled from 'styled-components';
 // import { Carousel } from 'antd';
 import About from './About';
 import Home from './Home';
+import Projects from './Projects';
+import Resume from './Resume';
+
 import { 
     Route, 
     Path, 
@@ -13,10 +16,12 @@ import {
 const StyledHomeContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 0rem;
     min-height: 85vh;
+    min-width: 80vw;
+
     
     /* .carousel {
         max-width: 50vw;
@@ -49,8 +54,9 @@ export default function LandingPage() {
         <StyledHomeContainer>
             <Switch>
                 <Route path="/about" component={About} />
+                <Route path="/projects" component={Projects} />
+                <Route exact path="/resume" component={Resume} />
                 <Route exact path="/" component={Home} />
-                
 
 
             
@@ -70,7 +76,6 @@ export default function LandingPage() {
             </Carousel>*/}
 
             </Switch>
-            
         </StyledHomeContainer>
     )
 }

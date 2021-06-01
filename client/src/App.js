@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Header from './components/Header';
 import LandingPage from './components/LandingPage';
 
+
 const StyledAppContainer = styled.div`
   background-color: #fffafb;
   min-height: 90vh;
@@ -17,6 +18,7 @@ function App() {
     <StyledAppContainer>
       <Header />
       <LandingPage />
+
 
     </StyledAppContainer>
   );

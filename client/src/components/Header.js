@@ -26,13 +26,14 @@ const StyledHeader = styled.header`
     /* font-family: 'Playball', cursive; */
     /* font-family: 'Righteous', cursive; */
     font-size: 5rem;
-    color: blue;
+    /* color: blue; */
     min-height: 15vh;
     max-height: 10vh;
     max-width: 100vw;
     /* background-color: white; */
     .erick-box-1 {
-        padding: 1rem;
+        margin-top: 3rem;
+        
         /* margin-left: .25rem; */
         opacity: 1;
         color: #312244;
@@ -54,14 +55,13 @@ const StyledHeader = styled.header`
     }
 
     nav {
-        background-color: #f0efeb;
-        background-color: white;
-        padding: 1rem 1rem 0 1rem;
-;
+        display: flex;
+        padding: 1rem 0rem 0rem 1rem;
+        min-height: 5vh;
         font-size: 2rem;
         padding-left: 5rem;
         a {
-            padding-right: 2rem;
+            /* padding-right: 1rem; */
             /* color: #312244; */
             color: #bee1e6;
             text-decoration: none;
@@ -73,7 +73,38 @@ const StyledHeader = styled.header`
 
             }
         }
-    }
+            .link-tab {
+                display: flex;
+                justify-content: flex-start;
+                border-radius: 15px 50px 0px 0px;
+                background-color: black;
+                padding-right: .5rem;
+                background-color: #fdefe6;
+                /* padding-bottom: 3.5rem; */
+                margin-right: 2rem;
+                padding-left: 2rem;
+                padding-right: 3rem;
+                padding-top: .5rem;
+                padding-bottom: 2rem;
+                .link {
+                    /* display: flex;
+                    flex-direction: column;
+                    justify-content: center; */
+                    /* margin-left: 1rem; */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    /* border-radius: 10px; */
+                    font-size: 2rem;
+                }
+
+            }
+
+        div {
+
+        }
+}
 
 `
 
@@ -82,9 +113,18 @@ export default function Header() {
         <StyledHeader>
             <Link to="/"><div className="erick-box-1">Erick Gonzalez</div></Link>
             <nav>
-                <Link to="/about">about</Link>
-                <Link to="/resume">resume</Link>
-                <Link to="/about">projects</Link>
+                <div className="link-tab">
+                    <span className="link"><Link to="/about">about</Link></span>               
+                </div>
+                <div className="link-tab">
+                    <span className="link"><Link to="/resume">resume</Link></span>                
+                </div>
+                <div className="link-tab">
+                    <span className="link"><Link to="/projects">projects</Link></span>                
+                </div>
+
+
+
 
             </nav>
 
