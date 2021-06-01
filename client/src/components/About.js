@@ -12,6 +12,7 @@ const StyledAbout = styled.div`
     min-height: inherit;
     min-width: 80vw;
     font-size: 3rem;
+    font-family: 'Roboto Mono', monospace;
 
     h1 {
         margin-bottom: 2rem;
@@ -33,6 +34,7 @@ function About() {
         <StyledAbout>
             <div><h1>About Me</h1>
             <p>Content here</p>
+            
             
             
             
