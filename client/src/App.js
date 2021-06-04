@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Header from './components/Header';
 import LandingPage from './components/LandingPage';
+import Footer from './components/Footer';
 
 
 const StyledAppContainer = styled.div`
@@ -19,6 +20,7 @@ function App() {
     <StyledAppContainer>
       <Header />
       <LandingPage />
+      <Footer />
 
 
     </StyledAppContainer>

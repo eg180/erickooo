@@ -10,7 +10,7 @@ const StyledSidebar = styled.div`
     background-color: white;
     padding: 2rem;
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 9rem;
     margin-bottom: 2rem;
     margin-right: 1rem;
     border-radius: 20px;

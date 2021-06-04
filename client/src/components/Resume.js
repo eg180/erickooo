@@ -23,6 +23,10 @@ const StyledAbout = styled.div`
     div {
         p {
             font-size: 3rem;
+            a {
+                color: #118ab2;
+                margin-left: 5rem;
+            }
         }
     }
 `

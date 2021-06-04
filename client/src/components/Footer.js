@@ -3,15 +3,16 @@ import styled from 'styled-components';
 
 
 const StyledFooter = styled.footer`
-    background-color: #0081a7;
-    min-width: 25vw;
+    margin-top: 3rem;
+    color: grey;
+    opacity: .25;
     padding: 2rem;
 `
 
 function Footer() {
     return (
         <StyledFooter>
-            <span>Created & Designed by Me (the person who owns the site)</span>
+            <span>©2021 erick gonzalez</span>
         </StyledFooter>
     )
 }

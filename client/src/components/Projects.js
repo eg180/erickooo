@@ -5,7 +5,8 @@ import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
 const StyledAbout = styled.div`
     min-width: inherit;
-    max-width: inherit;
+    min-width: inherit;
+    background-color: #fdefe6;
     
 
     p {
@@ -52,13 +53,14 @@ const StyledAbout = styled.div`
         max-width: 40vw;
         min-width: inherit;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         margin: 2rem;
         word-wrap: break-word;
         a {
             word-wrap: break-word;
         }
         #featured-projects {
+            max-width: 65vw;
             background-color: #fef6c9;
             padding: 1rem 0 3rem 1rem;
             box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
