@@ -9,7 +9,7 @@ const StyledHeader = styled.header`
     }
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Roboto Mono', monospace;
@@ -29,18 +29,21 @@ const StyledHeader = styled.header`
     /* color: blue; */
     min-height: 15vh;
     max-height: 10vh;
-    max-width: 100vw;
+    max-width: 35vw;
     /* background-color: white; */
     .erick-box-1 {
+        position: static;
+        min-width: 100%;
         margin-top: 3rem;
-        
+        margin-left: 25rem;
+        padding-left: 145rem;
         /* margin-left: .25rem; */
         opacity: 1;
         color: #312244;
         /* position: fixed; */
-        max-width: 100%;
-        max-height: 100%;
-        z-index: 1;
+        /* max-width: 100%;
+        max-height: 100%; */
+        /* z-index: 1; */
     }
     .erick-box-2 {
         color: pink;
@@ -60,6 +63,11 @@ const StyledHeader = styled.header`
         min-height: 5vh;
         font-size: 2rem;
         padding-left: 5rem;
+        padding-right: 10rem;
+        margin-left: 8rem;
+        margin-right:190rem;
+        margin-top: 3rem;
+        /* max-width: 25vw; */
         a {
             /* padding-right: 1rem; */
             /* color: #312244; */
@@ -74,18 +82,20 @@ const StyledHeader = styled.header`
             }
         }
             .link-tab {
+                min-width: 2vw;
+                max-width: 10vw;
                 display: flex;
                 justify-content: flex-start;
                 border-radius: 15px 50px 0px 0px;
-                background-color: black;
                 padding-right: .5rem;
                 background-color: #fdefe6;
                 /* padding-bottom: 3.5rem; */
-                margin-right: 2rem;
+                /* margin-right: 2rem; */
                 padding-left: 2rem;
                 padding-right: 3rem;
                 padding-top: .5rem;
-                padding-bottom: 2rem;
+                padding-bottom: 8rem;
+                margin-bottom: 2rem;
                 .link {
                     /* display: flex;
                     flex-direction: column;
@@ -96,7 +106,7 @@ const StyledHeader = styled.header`
                     align-items: center;
                     background-color: white;
                     /* border-radius: 10px; */
-                    font-size: 2rem;
+                    font-size: 1rem;
                 }
 
             }
@@ -111,7 +121,8 @@ const StyledHeader = styled.header`
 export default function Header() {
     return (
         <StyledHeader>
-            <Link to="/"><div className="erick-box-1">Erick Gonzalez</div></Link>
+            <div><Link to="/"><div className="erick-box-1">Erick</div></Link></div>
+            
             <nav>
                 <div className="link-tab">
                     <span className="link"><Link to="/about">about</Link></span>               
@@ -122,8 +133,6 @@ export default function Header() {
                 <div className="link-tab">
                     <span className="link"><Link to="/projects">projects</Link></span>                
                 </div>
-
-
 
 
             </nav>

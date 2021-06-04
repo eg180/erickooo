@@ -20,7 +20,7 @@ const StyledHomeContainer = styled.div`
     align-items: center;
     margin-top: 0rem;
     min-height: 85vh;
-    min-width: 80vw;
+    min-width: 30vw;
 
     
     /* .carousel {

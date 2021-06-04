@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
+
 const StyledAbout = styled.div`
     display: flex;
     flex-direction: row;
@@ -9,7 +11,7 @@ const StyledAbout = styled.div`
     justify-content: space-between;
     /* margin-left: 5rem; */
     min-height: inherit;
-    min-width: 90vw;
+    min-width: 80vw;
     font-size: 3rem;
     font-family: 'Roboto Mono', monospace;
     padding: 1rem;
@@ -18,13 +20,18 @@ const StyledAbout = styled.div`
                 0 4px 4px rgba(0,0,0,0.11), 
                 0 6px 8px rgba(0,0,0,0.11),
                 0 8px 16px rgba(0,0,0,0.11);
+    div {
+        p {
+            font-size: 3rem;
+        }
+    }
 `
 
 function Resume() {
     return (
         <>
         <StyledAbout>
-            <div><h1>Resume</h1>
+            <div><p><a href="https://docs.google.com/document/d/1lYnecWR6GRiS5kthmbvAYSmxUNxVCbk-rGCkAlNwvgU/edit?usp=sharing" rel="noreferrer" target="_blank" alt="link to resume on Google Drive"><OpenInNewIcon /></a></p>
     
             
             

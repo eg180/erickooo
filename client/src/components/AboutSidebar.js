@@ -7,6 +7,13 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
 
 const StyledSidebar = styled.div`
+    background-color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    max-height: 70vh;
+    overflow: hidden;
 
     a {
         color: #f08080;
