@@ -50,8 +50,13 @@ const StyledAbout = styled.div`
                 0 6px 8px rgba(0,0,0,0.11),
                 0 8px 16px rgba(0,0,0,0.11);
     .featured {
-        max-width: 40vw;
-        min-width: inherit;
+        h1 {
+            font-size: 2rem;
+        }
+        /* min-width: inherit; */
+        div {
+            min-width: 30vw;
+        }
         display: flex;
         flex-direction: column;
         margin: 2rem;
@@ -60,7 +65,11 @@ const StyledAbout = styled.div`
             word-wrap: break-word;
         }
         #featured-projects {
-            max-width: 65vw;
+            transform: skew(0.03turn, -9deg);
+            color: #14213d;
+            border-radius: 5px;
+            width: 10rem;
+            height: 7rem;
             background-color: #fef6c9;
             padding: 1rem 0 3rem 1rem;
             box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
@@ -78,7 +87,7 @@ function Projects() {
     return (
         <>
         <StyledAbout>
-            <div className="featured"><h1 id="featured-projects">Featured Projects</h1>
+            <div className="featured"><h1 id="featured-projects">My Featured Projects 🔥🧑🏻‍💻🔥</h1>
                 <div className="featured_title"><h2>Cash-out Poker</h2> 
                     <p><a href="https://cashoutapp.herokuapp.com" rel="noreferrer" target="_blank">https://cashoutpokerapp.herokuapp.com <OpenInNewIcon /></a></p>
                     <p className="featured_role">Role: Front end / Back End / Design / Concept </p>
