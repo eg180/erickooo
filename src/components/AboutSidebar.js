@@ -7,19 +7,13 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
 
 const StyledSidebar = styled.div`
-    background-color: #fffafb;
-    padding: 2rem;
-    margin: 1rem 1rem 1rem 1rem;
-    border-radius: 20px;
-    overflow: hidden;
 
     a {
         color: #f08080;
     }
-    /* margin-left: 2rem; */
+    margin-left: 2rem;
     /* background-color: red; */
     min-height: inherit;
-    min-width: 10vw;
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     font-weight: 200;
@@ -36,11 +30,10 @@ const StyledSidebar = styled.div`
         justify-content: center;
         margin-top: 1rem;
         background-color: #ebebeb;
+
         padding: .50rem;
         border-radius: 10px;
-        p {
-            font-size: .75rem;
-        }
+        font-size: .75rem;
     }
     .social {
         display: flex;

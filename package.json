@@ -6,10 +6,10 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "migrateh": "heroku run knex migrate:latest -a frenchfyi",
-    "rollbackh": "heroku run knex migrate:rollback -a frenchfyi",
-    "databaseh": "heroku pg:psql -a frenchfyi",
-    "seedh": "heroku run knex seed:run -a frenchfyi",
+    "migrateh": "heroku run knex migrate:latest -a erickooo",
+    "rollbackh": "heroku run knex migrate:rollback -a erickooo",
+    "databaseh": "heroku pg:psql -a erickooo",
+    "seedh": "heroku run knex seed:run -a erickooo",
     "deploy": "git push heroku main",
     "heroku-postbuild": "cd client && npm i && npm run build"
   },

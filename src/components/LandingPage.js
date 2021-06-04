@@ -9,19 +9,18 @@ import Resume from './Resume';
 
 import { 
     Route, 
+    Path, 
     Switch } from 'react-router-dom'
 
 
 const StyledHomeContainer = styled.div`
-    /* display: flex;
-    flex-direction: row; */
-    /* justify-content: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     margin-top: 0rem;
     min-height: 85vh;
-    max-width: 100vh;
-    /* min-width: 100vw; */
-
+    min-width: 80vw;
 
     
     /* .carousel {

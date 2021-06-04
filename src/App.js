@@ -5,19 +5,18 @@ import LandingPage from './components/LandingPage';
 
 const StyledAppContainer = styled.div`
   background-color: #fffafb;
-
-  /* max-width: 75vw; */
+  min-height: 90vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 5rem;
 `
 
 function App() {
   return (
     <StyledAppContainer>
-      <Header className="header" />
+      <Header />
       <LandingPage />
 
 

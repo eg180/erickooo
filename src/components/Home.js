@@ -2,13 +2,11 @@ import React from 'react'
 import styled from 'styled-components';
 
 const StyledHomeDiv = styled.div`
-
     img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
+  
     }
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: row;
     background-color: #fdefe6;
@@ -16,8 +14,7 @@ const StyledHomeDiv = styled.div`
     justify-content: space-between;
     /* margin-left: 9rem; */
     min-height: inherit;
-    max-width: 100vw;
-    /* min-width: inherit; */
+    min-width: inherit;
     font-size: 3rem;
     font-family: 'Roboto Mono', monospace;
     padding: 1rem;
