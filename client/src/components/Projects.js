@@ -9,7 +9,7 @@ const StyledAbout = styled.div`
     
 
     p {
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: .5rem;
     }
     h1 {
@@ -21,7 +21,7 @@ const StyledAbout = styled.div`
     a {
         /* padding-right: 1rem; */
         /* color: #312244; */
-        color: #bee1e6;
+        color: #118ab2;
         text-decoration: none;
         font-size: 1rem;
         :active {
@@ -34,12 +34,12 @@ const StyledAbout = styled.div`
     }
     display: flex;
     flex-direction: row;
-    background-color: #fdefe6;
+
     border-radius: 20px;
     justify-content: space-between;
     /* margin-left: 5rem; */
     min-height: inherit;
-    max-width: 80vw;
+    min-width: 95vw;
     font-size: 3rem;
     font-family: 'Roboto Mono', monospace;
     padding: 1rem;
@@ -48,19 +48,26 @@ const StyledAbout = styled.div`
                 0 4px 4px rgba(0,0,0,0.11), 
                 0 6px 8px rgba(0,0,0,0.11),
                 0 8px 16px rgba(0,0,0,0.11);
-    .featured div {
-        
+    .featured {
         max-width: 40vw;
         min-width: inherit;
         display: flex;
         flex-wrap: wrap;
-        background-color: #fbfefb;
         margin: 2rem;
         word-wrap: break-word;
         a {
             word-wrap: break-word;
         }
+        #featured-projects {
+            background-color: #fef6c9;
+            padding: 1rem 0 3rem 1rem;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+                        0 2px 2px rgba(0,0,0,0.11), 
+                        0 4px 4px rgba(0,0,0,0.11), 
+                        0 6px 8px rgba(0,0,0,0.11),
+                        0 8px 16px rgba(0,0,0,0.11);
         }
+        
 
     }
 `
@@ -69,7 +76,7 @@ function Projects() {
     return (
         <>
         <StyledAbout>
-            <div className="featured"><h1>Featured Projects</h1>
+            <div className="featured"><h1 id="featured-projects">Featured Projects</h1>
                 <div className="featured_title"><h2>Cash-out Poker</h2> 
                     <p><a href="https://cashoutpokerapp.herokuapp.com" rel="noreferrer" target="_blank">https://cashoutpokerapp.herokuapp.com <OpenInNewIcon /></a></p>
                     <p className="featured_role">Role: Front end / Back End / Design / Concept </p>

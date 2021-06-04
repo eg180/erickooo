@@ -10,15 +10,18 @@ const StyledSidebar = styled.div`
     background-color: white;
     padding: 2rem;
     margin-top: 2rem;
+    margin-left: 2rem;
     margin-bottom: 2rem;
+    margin-right: 1rem;
     border-radius: 20px;
     max-height: 70vh;
+    max-width: 42vw;
+    min-width: 10rem;
     overflow: hidden;
 
     a {
         color: #f08080;
     }
-    margin-left: 2rem;
     /* background-color: red; */
     min-height: inherit;
     font-family: 'Poppins', sans-serif;
@@ -81,6 +84,12 @@ const StyledSidebar = styled.div`
         }
         
     }
+.about-me {
+    p {
+        font-size: 1rem;
+    }
+
+}
 
     img {
         border-radius: 20px;
@@ -113,6 +122,9 @@ export default function AboutSidebar() {
             </div>
             <div className="email">
                 <EmailTwoToneIcon id="envelope" /> <span id="email-address">ericksinbox@gmail.com</span>
+            </div>
+            <div className="about-me">
+                <p>I am a multi-lingual full stack developer currently located in Atlanta, GA open to remote roles or based in Tours, France.</p>
             </div>
 
         </StyledSidebar>

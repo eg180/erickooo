@@ -11,7 +11,7 @@ const StyledAbout = styled.div`
     justify-content: space-between;
     /* margin-left: 5rem; */
     min-height: inherit;
-    min-width: 80vw;
+    min-width: 95vw;
     font-size: 3rem;
     font-family: 'Roboto Mono', monospace;
     padding: 1rem;
@@ -32,6 +32,7 @@ function Resume() {
         <>
         <StyledAbout>
             <div><p><a href="https://docs.google.com/document/d/1lYnecWR6GRiS5kthmbvAYSmxUNxVCbk-rGCkAlNwvgU/edit?usp=sharing" rel="noreferrer" target="_blank" alt="link to resume on Google Drive"><OpenInNewIcon /></a></p>
+            <p></p>
     
             
             

@@ -32,7 +32,7 @@ const StyledHeader = styled.header`
     max-width: 35vw;
     /* background-color: white; */
     .erick-box-1 {
-        position: static;
+        /* position: static; */
         min-width: 100%;
         margin-top: 3rem;
         margin-left: 25rem;
@@ -43,7 +43,7 @@ const StyledHeader = styled.header`
         /* position: fixed; */
         /* max-width: 100%;
         max-height: 100%; */
-        /* z-index: 1; */
+        z-index: -1;
     }
     .erick-box-2 {
         color: pink;
@@ -96,6 +96,7 @@ const StyledHeader = styled.header`
                 padding-top: .5rem;
                 padding-bottom: 8rem;
                 margin-bottom: 2rem;
+                
                 .link {
                     /* display: flex;
                     flex-direction: column;
@@ -124,6 +125,9 @@ export default function Header() {
             <div><Link to="/"><div className="erick-box-1">Erick</div></Link></div>
             
             <nav>
+                <div className="link-tab" id="home">
+                    <span className="link"><Link to="/"><p>Home</p></Link></span>               
+                </div>
                 <div className="link-tab">
                     <span className="link"><Link to="/about">about</Link></span>               
                 </div>

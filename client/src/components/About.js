@@ -42,7 +42,9 @@ const StyledAbout = styled.div`
     }
 
     .about-me {
-        min-width: 40vw;
+        min-width: 35vw;
+        /* margin-left: 5rem; */
+        padding-top: 3rem;
         /* padding-right: 10rem; */
         /* margin-right: 34rem; */
         div {
@@ -57,7 +59,7 @@ function About() {
             <StyledAbout>
                 <AboutSidebar className="about-sidebar" />
                 <div className="about-me">
-                    <h1>About Me</h1>
+                    
                 
                 
                 

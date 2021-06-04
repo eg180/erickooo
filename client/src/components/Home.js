@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledHomeDiv = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #fdefe6;
     border-radius: 20px;
     justify-content: center;
