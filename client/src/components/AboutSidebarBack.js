@@ -31,7 +31,7 @@ const StyledSidebar = styled.div`
        cursor: pointer;
    }
    p {
-       font-size: .85rem;
+       font-size: .80rem;
    }
 
 `
