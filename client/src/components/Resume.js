@@ -35,7 +35,7 @@ function Resume() {
     return (
         <>
         <StyledAbout>
-            <div><p><a href="https://docs.google.com/document/d/1lYnecWR6GRiS5kthmbvAYSmxUNxVCbk-rGCkAlNwvgU/edit?usp=sharing" rel="noreferrer" target="_blank" alt="link to resume on Google Drive"><OpenInNewIcon /></a></p>
+            <div><p><a href="https://docs.google.com/document/d/1cAvnzTBVPcsLe9gax_WMM3BDYu6-PXT37AolJWBvLWA/edit?usp=sharing" rel="noreferrer" target="_blank" alt="link to resume on Google Drive"><OpenInNewIcon /></a></p>
             <p></p>
     
             
