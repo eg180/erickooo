@@ -124,6 +124,9 @@ const StyledSidebar = styled.div`
     p {
         font-size: 1rem;
         max-width: 12rem;
+        #flip p {
+            font-size: 25rem;
+        }
 
     }
 

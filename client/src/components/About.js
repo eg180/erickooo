@@ -45,7 +45,7 @@ const StyledAbout = styled.div`
     }
     .back {
         p {
-            font-size: .85rem;
+            font-size: .72rem;
         }
     }
 
@@ -58,6 +58,7 @@ const StyledAbout = styled.div`
         div {
             /* margin-right: 25rem; */
         }
+
     }
 `
 
