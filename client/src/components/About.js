@@ -43,6 +43,11 @@ const StyledAbout = styled.div`
     p {
         font-size: 1.3rem;
     }
+    .back {
+        p {
+            font-size: .85rem;
+        }
+    }
 
     .about-me {
         min-width: 35vw;
