@@ -89,11 +89,13 @@ function Projects() {
         <StyledAbout>
             <div className="featured"><h1 id="featured-projects">My Featured Projects 🔥🧑🏻‍💻🔥</h1>
                 <div className="featured_title"><h2>Cash-out Poker</h2> 
-                    <p><a href="https://cashoutapp.herokuapp.com" rel="noreferrer" target="_blank">https://cashoutpokerapp.herokuapp.com <OpenInNewIcon /></a></p>
+                    <p className="status">Status: Deployed - Adding final touches before launch 🚀</p>
+                    <p><a href="https://cashoutapp.herokuapp.com" rel="noreferrer" target="_blank">https://cashoutapp.herokuapp.com <OpenInNewIcon /></a></p>
                     <p className="featured_role">Role: Front end / Back End / Design / Concept </p>
                     <p className="featured_tech">Tech Stack: HTML | React | Node | Express.js | Styled-Components | PostgreSQL | Knex.js</p>
                 </div>
                 <div className="featured_title"><h2>filmJot</h2>
+                    <p className="status">Status: Deployed - but in development 🚜 </p>
                     <p><a href="https://filmjot.herokuapp.com" rel="noreferrer" target="_blank">https://filmjot.herokuapp.com <OpenInNewIcon /></a></p>
                     <p className="featured_role">Role: Front end / Back End / Design / Concept </p>
                     <p className="featured_tech">Tech Stack: HTML | React | Node | Express.js | Styled-Components | PostgreSQL | Knex.js | Material-UI</p>
