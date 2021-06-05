@@ -9,7 +9,6 @@ import Resume from './Resume';
 
 import { 
     Route, 
-    Path, 
     Switch } from 'react-router-dom'
 
 
