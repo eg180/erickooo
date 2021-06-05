@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
+import FlipCameraAndroidOutlinedIcon from '@material-ui/icons/FlipCameraAndroidOutlined';
 import { RiReactjsFill } from 'react-icons/ri';
 import { FaNode } from 'react-icons/fa';
 import { SiPostgresql, SiAdobephotoshop } from 'react-icons/si';
 
 
 const StyledSidebar = styled.div`
-    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* overflow-y: scroll; */
     background-color: white;
     padding: 2rem;
     margin-top: 2rem;
@@ -24,7 +28,13 @@ const StyledSidebar = styled.div`
     min-width: 10rem;
     /* display: flex;
     flex-wrap: wrap; */
-   
+   #flip {
+       margin-top: 2rem;
+       display: flex;
+       align-self: flex-end;
+       color: grey;
+       cursor: pointer;
+   }
 
     a {
         color: #f08080;
@@ -124,10 +134,11 @@ const StyledSidebar = styled.div`
     }
 `
 
-export default function AboutSidebar() {
+export default function AboutSidebar(props) {
+    const { handleFlip } = props;
+
     return (
         <StyledSidebar>
-            
             <img src="images/laserbackground_erick.jpeg" alt="erick-avatar" />
             <div>
                 <p id="name">Erick</p>
@@ -164,10 +175,7 @@ export default function AboutSidebar() {
             <div className="email">
                 <EmailTwoToneIcon id="envelope" /> <span id="email-address">ericksinbox@gmail.com</span>
             </div>
-            <div className="about-me">
-                <p>I am a multi-lingual full stack developer currently located in Atlanta, GA open to remote roles or based in Tours, France.</p>
-            </div>
-
+        <FlipCameraAndroidOutlinedIcon onClick={handleFlip} id="flip" />
         </StyledSidebar>
     )
 }

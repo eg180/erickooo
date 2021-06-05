@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AboutSidebar from './AboutSidebar';
+import AboutSidebarBack from './AboutSidebarBack';
 import styled from 'styled-components';
+
+import FlipCameraAndroidOutlinedIcon from '@material-ui/icons/FlipCameraAndroidOutlined';
 
 const AboutContainer = styled.div`
     display: flex;
@@ -54,19 +57,31 @@ const StyledAbout = styled.div`
 `
 
 function About() {
+    const [showMore, setShowMore] = useState(false);
+
+    const handleFlip = () => {
+        setShowMore(!showMore)
+    };
+
+
     return (
         <AboutContainer>
             <StyledAbout>
-                <AboutSidebar className="about-sidebar" />
-                <div className="about-me">
-                    
-                
-                
-                
-                
-                
-                
-                </div>
+                {showMore === false
+                ?
+                <>
+                    <AboutSidebar className="about-sidebar" handleFlip={handleFlip} />
+                    <div className="about-me">
+                    </div>
+                </>
+                :
+                <>
+                    <AboutSidebarBack className="about-sidebar" handleFlip={handleFlip} />
+                    <div className="about-me">
+                    </div>
+                </>
+                }
+
 
                 
                 
