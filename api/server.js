@@ -16,6 +16,7 @@ app.use(
             'erickgonzalez.herokuapp.com',          
             "'self'",
             'google',
+            '*.vimeo.com',
             '*.google',
             '*.google.com',
             '*.googleapis.com',
