@@ -15,6 +15,7 @@ const StyledSidebar = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     /* overflow-y: scroll; */
     background-color: white;
     padding: 2rem;
@@ -74,8 +75,12 @@ const StyledSidebar = styled.div`
     }
     .social {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         margin-top: 2rem;
+        a {
+            padding-right: 2rem;
+        }
 
     }
     #skills {
@@ -83,27 +88,36 @@ const StyledSidebar = styled.div`
         justify-content: space-around;
         margin-top: 1rem;
         color: grey;
+        svg {
+            padding-right: 1rem;
+        }
+        
     }
 
     .location {
         margin-top: 2rem;
         display: flex;
-        align-items: baseline;
+        justify-content: flex-start;
+        align-self: flex-start;
 
         #marker {
             margin-right: .25rem;
             color: #0081a7;
+            align-self: baseline;
         }
         
         #city-state {
             font-size: .75rem;
+            align-self: baseline;
         }
         
     }
     .email {
         margin-top: 1rem;
         display: flex;
+        align-self: flex-start;
         align-items: baseline;
+
 
         #envelope {
             margin-right: .25rem;
@@ -134,6 +148,7 @@ const StyledSidebar = styled.div`
 
     img {
         border-radius: 20px;
+        max-width: 65%;
     }
 `
 
@@ -173,7 +188,7 @@ export default function AboutSidebar(props) {
             </div>
 
             <div className="location">
-                <LocationOnIcon id="marker" /> <span id="city-state">Atlanta, GA</span>
+                <LocationOnIcon id="marker" /> <span id="city-state">Tours, France</span>
             </div>
             <div className="email">
                 <EmailTwoToneIcon id="envelope" /> <span id="email-address">ericksinbox@gmail.com</span>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import ReactPlayer from "react-player";
 
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
@@ -64,6 +65,11 @@ const StyledAbout = styled.div`
         a {
             word-wrap: break-word;
         }
+        > div {
+            margin-bottom: 3rem;
+        }
+
+        }
         #featured-projects {
             transform: skew(0.03turn, -9deg);
             color: #14213d;
@@ -90,6 +96,11 @@ function Projects() {
             <div className="featured"><h1 id="featured-projects">My Featured Projects 🔥🧑🏻‍💻🔥</h1>
                 <div className="featured_title"><h2>Cash-out Poker</h2> 
                     <p className="status">Status: Deployed - Adding final touches before launch 🚀</p>
+                    <div>
+                        <ReactPlayer
+                            url="https://vimeo.com/567702592"
+                        />
+                    </div>   
                     <p><a href="https://cashoutapp.herokuapp.com" rel="noreferrer" target="_blank">https://cashoutapp.herokuapp.com <OpenInNewIcon /></a></p>
                     <p className="featured_role">Role: Front end / Back End / Design / Concept </p>
                     <p className="featured_tech">Tech Stack: HTML | React | Node | Express.js | Styled-Components | PostgreSQL | Knex.js</p>
