@@ -15,25 +15,53 @@ app.use(
         'connect-src': [
             'erickgonzalez.herokuapp.com',          
             "'self'",
+            'google',
+            '*.google',
+            '*.google.com',
+            '*.googleapis.com',
+            "'unsafe-inline'",
+            "'unsafe-eval'"
         ],
         'script-src': [
             "'self'",
+            'google',
+            '*.google',
+            '*.google.com',
+            'cashoutapp.herokuapp.com',
+            '*.googleapis.com',
+            "'unsafe-inline'",
+            "'unsafe-eval'"
         ],        
         'img-src': [
-            "'self'"
+            "'self'",
+            '*.ko-fi.com',
+            'google',
+            '*.googleusercontent.com',
+            '*.google',
+            '*.google.com',
+            'cashoutapp.herokuapp.com',
+            '*.googleapis.com',
+            "'unsafe-inline'",
+            "'unsafe-eval'"
         ],
          'font-src': [
             "'self'",
             'google',
+            'cashoutapp.herokuapp.com',
+            '*.gstatic.com',
+            '*.google',
+            '*.google.com',
+            '*.googleapis.com',
+            "'unsafe-inline'",
+            "'unsafe-eval'"
         ],
-        'frame-src': ['*.google.com', '*.vimeo.com'], 
-        'default-src': ['erickgonzalez.herokuapp.com', "'self'"],
-        'script-src-elem': ['erickgonzalez.herokuapp.com', "'self'"],
-        'style-src': ["'unsafe-inline'", 'erickgonzalez.herokuapp.com', "'self'", '*.google.com', '*.googleapis.com'],
-        'style-src-elem': ['*.googleapis.com', "'self'"]
+        'frame-src': ['*.google.com', 'erickgonzalez.herokuapp.com', '*.gstatic.com','*.googleapis.com', "'unsafe-inline'", "'self'"], 
+        'default-src': ['*.gstatic.com', '*.gstatic.com', 'erickgonzalez.herokuapp.com', '*.googleapis.com', "'unsafe-inline'", "'self'"],
+        'script-src-elem': ["'unsafe-inline'", '*.vimeo.com', 'erickgonzalez.herokuapp.com', "'self'", '*.google.com', '*.googleapis.com'],
+        'style-src': ["'self'", 'erickgonzalez.herokuapp.com', '*.googleapis.com', "'unsafe-inline'"]
       },
     },
   })
-);
+)
 
 module.exports = app;
