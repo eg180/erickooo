@@ -29,7 +29,8 @@ app.use(
         'frame-src': ['*.google.com', '*.vimeo.com'], 
         'default-src': ['erickgonzalez.herokuapp.com', "'self'"],
         'script-src-elem': ['erickgonzalez.herokuapp.com', "'self'"],
-        'style-src': ["'self'", 'erickgonzalez.herokuapp.com']
+        'style-src': ["'unsafe-inline'", 'erickgonzalez.herokuapp.com', "'self'", '*.google.com', '*.googleapis.com'],
+        'style-src-elem': ['*.googleapis.com', "'self'"]
       },
     },
   })
