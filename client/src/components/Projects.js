@@ -103,13 +103,13 @@ function Projects() {
                     </div>   
                     <p><a href="https://cashoutapp.herokuapp.com" rel="noreferrer" target="_blank">https://cashoutapp.herokuapp.com <OpenInNewIcon /></a></p>
                     <p className="featured_role">Role: Front end / Back End / Design / Concept </p>
-                    <p className="featured_tech">Tech Stack: HTML | React | Node | Express.js | Styled-Components | PostgreSQL | Knex.js</p>
+                    <p className="featured_tech">Tech Stack: React | Redux | Node | Express.js | JWT | PostgreSQL | Knex.js |Styled-Components | Axios</p>
                 </div>
                 <div className="featured_title"><h2>filmJot</h2>
                     <p className="status">Status: Deployed - but in development 🚜 </p>
                     <p><a href="https://filmjot.herokuapp.com" rel="noreferrer" target="_blank">https://filmjot.herokuapp.com <OpenInNewIcon /></a></p>
                     <p className="featured_role">Role: Front end / Back End / Design / Concept </p>
-                    <p className="featured_tech">Tech Stack: HTML | React | Node | Express.js | Styled-Components | PostgreSQL | Knex.js | Material-UI</p>
+                    <p className="featured_tech">Tech Stack: React | Node | Express.js | PostgreSQL | Bcrypt.js | Axios | JwT  | Knex.js | Bootstrap | Context API</p>
                 </div>
     
             

@@ -148,7 +148,7 @@ const StyledSidebar = styled.div`
 
     img {
         border-radius: 20px;
-        max-width: 65%;
+        max-width: 100%;
     }
 `
 
