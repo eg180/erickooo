@@ -17,7 +17,7 @@ const StyledHomeContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: .75rem;
+    margin-top: 1.35rem;
     margin-right: 2rem;
     min-height: 85vh;
     min-width: 30vw;

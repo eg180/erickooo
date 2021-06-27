@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
-import ReactPlayer from "react-player";
+
 
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
+import OndemandVideoIcon from '@material-ui/icons/OndemandVideo';
 
 const StyledAbout = styled.div`
     min-width: inherit;
@@ -96,11 +97,7 @@ function Projects() {
             <div className="featured"><h1 id="featured-projects">My Featured Projects 🔥🧑🏻‍💻🔥</h1>
                 <div className="featured_title"><h2>Cash-out Poker</h2> 
                     <p className="status">Status: Deployed - Adding final touches before launch 🚀</p>
-                    <div>
-                        <ReactPlayer
-                            url="https://vimeo.com/567702592"
-                        />
-                    </div>   
+                    <p><a href="https://vimeo.com/567702592" rel="noreferrer" target="_blank">See trailer <OndemandVideoIcon /></a></p>
                     <p><a href="https://cashoutapp.herokuapp.com" rel="noreferrer" target="_blank">https://cashoutapp.herokuapp.com <OpenInNewIcon /></a></p>
                     <p className="featured_role">Role: Front end / Back End / Design / Concept </p>
                     <p className="featured_tech">Tech Stack: React | Redux | Node | Express.js | JWT | PostgreSQL | Knex.js |Styled-Components | Axios</p>
