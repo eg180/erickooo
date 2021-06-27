@@ -57,7 +57,7 @@ app.use(
             "'unsafe-inline'",
             "'unsafe-eval'"
         ],
-        'frame-src': ['*.google.com', 'erickgonzalez.herokuapp.com', '*.gstatic.com','*.googleapis.com', "'unsafe-inline'", "'self'"], 
+        'frame-src': ['*.google.com', '*.vimeo.com', 'erickgonzalez.herokuapp.com', '*.gstatic.com','*.googleapis.com', "'unsafe-inline'", "'self'"], 
         'default-src': ['*.gstatic.com', '*.gstatic.com', 'erickgonzalez.herokuapp.com', '*.googleapis.com', "'unsafe-inline'", "'self'"],
         'script-src-elem': ["'unsafe-inline'", '*.vimeo.com', 'erickgonzalez.herokuapp.com', "'self'", '*.google.com', '*.googleapis.com'],
         'style-src': ["'self'", 'erickgonzalez.herokuapp.com', '*.googleapis.com', "'unsafe-inline'"]
