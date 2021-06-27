@@ -17,6 +17,7 @@ app.use(
             "'self'",
             'google',
             '*.vimeo.com',
+            'vimeo.com',
             '*.google',
             '*.google.com',
             '*.googleapis.com',
